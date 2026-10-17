@@ -138,17 +138,23 @@
     }
     
     h1 { 
-      font-size: clamp(4rem, 12vw, 10rem); margin: 0; line-height: 0.85; font-weight: 900; 
-      text-transform: uppercase; letter-spacing: -6px; color: var(--text-main); 
+      font-size: clamp(4rem, 12vw, 10rem);
+      margin: 0;
+      line-height: 0.85;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -6px;
+      color: var(--text-main);
       text-shadow: 12px 12px 0px var(--hud-teal);
-    } 
-    .hudhack-title {
-    white-space: nowrap;
-    font-size: clamp(2.5rem, 10vw, 10rem);
-    letter-spacing: -6px;
     }
-    
-    .hero-her {
+
+    .hudhack-title {
+      white-space: nowrap;
+      font-size: clamp(2.5rem, 10vw, 10rem);
+      letter-spacing: -6px;
+    }
+
+    .hudhack-title .hero-her {
       display: inline-block;
       font-size: 0.65em;
       color: #c4b5fd;
@@ -156,8 +162,8 @@
       transform: rotate(-15deg);
       text-shadow: none;
       vertical-align: middle;
+      -webkit-text-stroke: 0;
     }
-
 
     .hero-sub {
       font-size: clamp(2rem, 5vw, 4rem); color: transparent; -webkit-text-stroke: 2px var(--border-main); 
