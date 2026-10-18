@@ -360,6 +360,51 @@ css
       .org-info { align-items: center; }
       .org-links { justify-content: center; }
     }
+    
+/* THEME BOX — AMETHYST PURPLE HIGHLIGHTS */
+
+/* Keep the original box and description unchanged */
+#theme {
+    background: var(--card-bg);
+    border: 4px solid var(--border-main);
+}
+
+/* RECLAIM THE FUTURE heading */
+#theme .theme-title {
+    background: #5B21B6;
+    color: #FFFFFF;
+    box-shadow: 8px 8px 0 #C4B5FD;
+}
+
+/* Add THEME: above the existing heading */
+#theme .theme-title::before {
+    content: "THEME:";
+    display: block;
+    font-size: 0.45em;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #DDD6FE;
+}
+
+/* Highlight MISSION label */
+#theme .theme-mission {
+    color: #5B21B6;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+/* Highlight the mission description in amethyst */
+#theme .theme-mission + p {
+    color: #5B21B6;
+    font-weight: 800;
+}
+
+/* Highlight the closing statement */
+#theme .theme-closing {
+    color: #5B21B6;
+    text-shadow: 3px 3px 0 #C4B5FD;
+}
+
   </style>
 </head>
 <body>
