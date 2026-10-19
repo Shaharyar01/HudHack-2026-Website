@@ -505,6 +505,76 @@
     text-shadow: 3px 3px 0 #C4B5FD;
 }
 
+
+/* =========================================
+   SPONSORS SECTION
+   ========================================= */
+
+.sponsors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin: 20px auto 0;
+    width: 100%;
+}
+
+.sponsor-box {
+    min-height: 200px;
+    padding: 25px;
+    background: var(--bg-color);
+    border: 4px dashed var(--border-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    overflow-wrap: anywhere;
+}
+
+.sponsor-box:nth-child(1) {
+    box-shadow: 8px 8px 0 var(--hud-teal);
+}
+
+.sponsor-box:nth-child(2) {
+    box-shadow: 8px 8px 0 var(--hud-purple);
+}
+
+.sponsor-box:nth-child(3) {
+    box-shadow: 8px 8px 0 var(--hud-gold);
+}
+
+.sponsor-box:hover {
+    transform: translateY(-4px);
+}
+
+.sponsor-placeholder {
+    font-size: 1.3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--text-main);
+    text-align: center;
+}
+
+.sponsor-subtext {
+    font-size: 0.85rem;
+    font-weight: 700;
+    opacity: 0.6;
+    text-align: center;
+}
+
+/* MOBILE SPONSORS LAYOUT */
+@media (max-width: 700px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sponsor-box {
+        min-height: 150px;
+    }
+}
+
+
   </style>
 </head>
 <body>
