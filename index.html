@@ -476,6 +476,27 @@
       .org-photo-wrap { margin-right: 0; margin-bottom: 25px; width: 180px; height: 180px; }
       .org-info { align-items: center; }
       .org-links { justify-content: center; }
+      
+  .organizer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 25px;
+  }
+
+  .organizer-card {
+    padding: 25px 16px;
+    min-width: 0;
+  }
+
+  .org-photo-wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .org-name {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    overflow-wrap: anywhere;
+  }
+
     }
     
 /* THEME BOX — AMETHYST PURPLE HIGHLIGHTS */
