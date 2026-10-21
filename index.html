@@ -449,7 +449,26 @@
     @media (max-width: 900px) {
       .cta-container { flex-direction: column; align-items: center; gap: 1rem; }
       .btn-brutal { width: 100%; }
-      .panel { padding: 30px 20px; }
+      .panel {
+  padding: 25px 16px;
+  box-shadow: 8px 8px 0 var(--border-main);
+}
+
+.panel-teal {
+  box-shadow: 8px 8px 0 var(--hud-teal);
+}
+
+.panel-purple {
+  box-shadow: 8px 8px 0 var(--hud-purple);
+}
+
+.panel-title {
+  max-width: 100%;
+  font-size: clamp(1.4rem, 5.5vw, 2.2rem);
+  padding: 10px 12px;
+  letter-spacing: -1px;
+  overflow-wrap: anywhere;
+}
       header { padding-top: 8rem; }
       .group-photo-wrap { aspect-ratio: 16/9; } 
       
